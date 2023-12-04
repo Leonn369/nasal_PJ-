@@ -9,7 +9,7 @@ scoring <- function(arr) {
 }
 
 dir <- args[1]
-cutoff <- args[2]
+cutoff <- as.numeric(args[2])
 group <- args[3]
 
 # merge score value

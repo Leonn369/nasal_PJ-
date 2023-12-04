@@ -52,7 +52,7 @@ statstic_cor <- function(data_r, data_p, cut = 0.01) {
 }
 
 dir <- args[1]
-pvalue <- args[2]
+pvalue <- as.numeric(args[2])
 prefix <- args[3]
 group <- args[4]
 
