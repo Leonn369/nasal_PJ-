@@ -32,7 +32,7 @@ for (i in 1:3) {
 ##for example for bacteria result
 auc <- get_AUC(bacteria, n = 100)
 
-#chose the mean auc model in 10 fold1 times random forest to get ROC plot
+#chose the mean auc model in 10 fold 10 times random forest to get ROC plot
 mean <- mean(auc)
 data.pred1 <- data.pred[[9]] ##the mean AUC model in result list
 ran_roc <- roc(data.pred1$true, data.pred1$prob,percent = TRUE,plot=TRUE,ci=TRUE)
